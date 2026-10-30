@@ -1,0 +1,36 @@
+# C/C++ 编译文件
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dll
+*.pdb
+
+# 当前项目的无扩展名编译文件
+/homework20001
+
+# 编译输出目录
+build/
+bin/
+Debug/
+Release/
+cmake-build-*/
+
+# Python 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# Java 编译文件
+*.class
+*.jar
+*.war
+
+# 临时文件
+*.tmp
+*.log
+*.bak
+*~
