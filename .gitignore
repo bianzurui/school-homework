@@ -1,36 +1,34 @@
-# C/C++ 编译文件
+
+# ===== C/C++ 编译产物 =====
+
+# Windows 可执行文件
+*.exe
+
+# GCC / G++ 编译中间文件
 *.o
 *.obj
-*.exe
+
+# 其他编译产物
 *.out
 *.a
-*.lib
 *.so
 *.dll
-*.pdb
+*.lib
 
-# 当前项目的无扩展名编译文件
-/homework20001
+# GCC 无扩展名默认可执行文件
+/a.out
 
-# 编译输出目录
-build/
-bin/
-Debug/
-Release/
-cmake-build-*/
-
-# Python 编译缓存
+# homework 编译产物（无扩展名）
+/homework[0-9]*
+!/homework[0-9]*.c
+# ===== Python 编译缓存 =====
 __pycache__/
 *.pyc
 *.pyo
 
-# Java 编译文件
-*.class
-*.jar
-*.war
-
-# 临时文件
+# ===== 临时文件 =====
 *.tmp
+*.temp
 *.log
 *.bak
 *~
