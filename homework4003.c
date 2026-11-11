@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main()
+{
+    int a[10],i,tmp,b,c,d;
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    tmp=a[0];
+    for(i=1;i<10;i++)
+    {
+        if(a[i]<tmp)
+        {
+            tmp=a[i];
+        }
+    }
+    for(i=0;i<10;i++)
+    {
+        if(tmp==a[i])
+        {
+            b=a[0];
+            a[0]=a[i];
+            a[i]=b;
+            break;
+        }
+    }
+    c=a[9];
+    for(i=0;i<9;i++)
+    {
+        if(a[i]>c)
+        {
+            c=a[i];
+        }
+    }
+   for(i=0;i<10;i++)
+    {
+        if(c==a[i])
+        {
+            d=a[9];
+            a[9]=a[i];
+            a[i]=d;
+            break;
+        }
+    }
+    for(i=0;i<10;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    printf("\n");
+    return 0;
+}
