@@ -23,6 +23,7 @@ int main()
                         break;
                     }
                 }
+                // 如果全部空闲，就购买
                 if(flag==1)
                 {
                     for(k=0;k<p;k++)
@@ -31,7 +32,7 @@ int main()
                         printf("%d ",r*5+j+k+1);
                     }
                     found=1;
-                    break; 
+                    break;
                 }
             }
         }
